@@ -15,10 +15,14 @@
     <!-- Firebase link -->
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
 
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     <title>Train schedules</title>
 </head>
 
 <body>
+    <!-- Jumbotron -->
     <div class="container px-0">
         <div class="jumbotron jumbotron-fluid">
             <div class="container text-center">
@@ -28,10 +32,11 @@
         </div>
     </div>
 
-    <div class="container rounded bg-info px-0 mb-4">
+    <!-- Schedules -->
+    <div class="container rounded bg-info px-0 pb-1 mb-4">
         <div class="container px-1 rounded">
             <h3 class="text-white">Current Train Schedules</h3>
-            <table class="table table-light rounded">
+            <table class="table table-light rounded mb-0">
                 <thead>
                     <tr>
                         <th scope="col">Train Name</th>
@@ -48,29 +53,31 @@
         </div>
     </div>
 
+    <!-- Form -->
     <div class="container bg-info border border-info rounded px-0 pb-0">
         <h3 class="text-white m-1">Add Train</h3>
         <form class="bg-white m-1 p-2 rounded">
             <div class="form-group">
                 <label>Train Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="train-name form-control">
             </div>
             <div class="form-group">
                 <label>Destination</label>
-                <input type="text" class="form-control">
+                <input type="text" class="destination form-control">
             </div>
             <div class="form-group">
                 <label>First Train Time (HH:mm - Military Time)</label>
-                <input type="text" class="form-control" placeholder="HH:mm - Military Time">
+                <input type="text" class="first-train-time form-control" placeholder="HH:mm">
             </div>
             <div class="form-group">
-                <label>Frequency</label>
-                <input type="number" class="form-control">
+                <label>Frequency (min)</label>
+                <input type="number" class="train-frequency form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="submit-button btn btn-primary">Submit</button>
         </form>
 
     </div>
+    <div class="container m-5"></div>
 
 
 
